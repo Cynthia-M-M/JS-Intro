@@ -38,19 +38,19 @@ let car = {
     year: 2020
 };
 
-console.log(person); 
+//console.log(person); 
 
-console.log(car.brand); // Accessing object properties using dot notation
-console.log(car["model"]); // Accessing object properties using bracket notation
+//console.log(car.brand); // Accessing object properties using dot notation
+//console.log(car["model"]); // Accessing object properties using bracket notation
 
 
 //2. Array - represents a list of values, can be of any data type
 let fruits = ["apple", "banana", "cherry"];
 let countries = ["Kenya", "Nigeria", "Uganda", "Tanzania", "South Africa"];
 
-console.log(fruits[0]); // Accessing array elements using index
+//console.log(fruits[0]); // Accessing array elements using index
 
-console.log(fruits);
+//console.log(fruits);
 
 //3. Function - represents a block of code that can be called and executed
 
@@ -106,16 +106,66 @@ let isLessThan = d < e; // false
 let isGreaterThanOrEqualTo = d >= e; // true
 let isLessThanOrEqualTo = d <= e; // false
 
-console.log(isEqual); // true
-console.log(isStrictEqual); // false
-console.log(isNotEqual); // false
-console.log(isStrictNotEqual); // true
-console.log(isGreaterThan); // false
-console.log(isLessThan); // false
-console.log(isGreaterThanOrEqualTo); // true
-console.log(isLessThanOrEqualTo); // true
+//console.log(isEqual); // true
+//console.log(isStrictEqual); // false
+//console.log(isNotEqual); // false
+//console.log(isStrictNotEqual); // true
+///console.log(isGreaterThan); // false
+//console.log(isLessThan); // false
+///console.log(isGreaterThanOrEqualTo); // true
+//console.log(isLessThanOrEqualTo); // true
 
+//4. Logical Operators - used to combine multiple boolean expressions
+// && - logical AND (true if both operands are true)
+// || - logical OR (true if at least one operand is true)
+// ! - logical NOT (inverts the boolean value)
 
+let w = 10; y = 5; z = 20;
+let isTrue = (w > y) && (z > w); // true    
+let isFalse = (w < y) || (z < w); // false
+let isNotTrue = !(w > y); // false
 
+// Functions - block of code that performs a specific task
+// Function Declaration
+/*
 
+function functionName(parameter1, parameter2,.......) 
+    // code to be executed
+    //return statement (optional)
+}
 
+*/
+
+function greet(name) {
+    console.log("Hello, " + name + "!");
+}
+
+greet("Alice"); // Calling the function with an argument
+
+function modulo(a, b) {
+    return a % b;
+}
+
+console.log(modulo(10, 3)); // Calling the function with arguments
+  
+
+function hello(name, country) {
+    console.log("My name is "+name+". I'm from "+country)
+}
+  
+hello("John", "Kenya");
+
+//function expression - a function that is assigned to a variable
+let greeting = function(name) { 
+    console.log("Hello, " + name + "!");
+}
+
+greeting("Bob"); // Calling the function with an argument
+
+//Arrow Function -  a shorter syntax for writing functions
+//Syntax:
+//const functionName = (parameter1, parameter2, .......) => {
+
+const summation = (a, b) => a + b;
+
+console.log(summation(5, 10)); // Calling the arrow function with arguments
