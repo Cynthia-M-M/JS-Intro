@@ -30,3 +30,46 @@ JS-Intro/
 ├── index.html      # Main HTML file containing the script
 ├── script.js       # External JavaScript file
 └── README.md       # Project documentation
+
+---
+
+## 🖥️ How to Run & View Output
+
+Since this project outputs to the **Console**, you won't see text on the webpage itself. Follow these steps to view the results:
+
+1.  **Open the File:** Double-click `index.html` to open it in your browser.
+2.  **Open Developer Tools:**
+    * **Right-click** anywhere on the page and select **Inspect**.
+    * *Or press `F12` (Windows) / `Cmd+Option+I` (Mac).*
+3.  **Select the Console Tab:** Click on the "Console" tab in the developer window.
+4.  **View Message:** You should see the message: *"Hello from JavaScript!"* (or similar).
+
+---
+
+## 💻 Code Preview
+
+Here is how the JavaScript is linked and executed:
+
+**HTML (index.html):**
+```html
+<script src="script.js"></script>
+
+```
+
+**JavaScript (script.js):**
+
+```javascript
+// This prints a message to the browser's hidden console
+console.log("Hello, World! This is my first JS code.");
+
+```
+
+---
+
+## 📄 License
+
+This project is created for educational purposes to demonstrate JavaScript basics.
+
+```
+
+```
